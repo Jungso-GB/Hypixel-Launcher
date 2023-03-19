@@ -61,7 +61,7 @@ function contains($files,$array){
 
 // Si vous souhaitez faire supprimer des vieux fichiers dans des répertoires prédéfinis c'est par ici
 // Ajoutez dans le tableau ci-après le répertoire à faire analyser
-$tableau = ScanDirectory('.',["mods","config","resourcepacks","shaderpacks"]);
+$tableau = ScanDirectory('.',["mods","config"]);
 $tableau = $tableau == false ? [] : $tableau;
 echo json_encode($tableau);
 ?>
